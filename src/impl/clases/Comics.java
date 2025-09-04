@@ -22,4 +22,11 @@ public class Comics extends Libro implements ILibro{
     public double getPrecioVenta() {
         return super.getPrecioVenta();
     }
+
+    @Override
+    public String toString() {
+        return "Comics{" +
+                "personaje='" + personaje + '\'' +
+                '}';
+    }
 }

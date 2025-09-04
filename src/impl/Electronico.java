@@ -1,10 +1,11 @@
 package impl;
 
-public abstract class Electronico implements IElectronico, IProducto{
+public abstract class Electronico extends Producto implements IElectronico{
 
     private String fabricante;
 
-    public Electronico(String fabricante) {
+    public Electronico(int Precio, String fabricante) {
+        super(Precio);
         this.fabricante = fabricante;
     }
 

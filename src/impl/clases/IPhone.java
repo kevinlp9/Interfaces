@@ -7,19 +7,22 @@ public class IPhone extends Electronico {
     private String modelo;
     private String color;
 
-    public IPhone(String fabricante, String modelo, String color) {
-        super(fabricante);
-        this.modelo = modelo;
+    public IPhone(int Precio, String fabricante, String color, String modelo) {
+        super(Precio, fabricante);
         this.color = color;
-    }
-
-    @Override
-    public int getPrecio() {
-        return 0;
+        this.modelo = modelo;
     }
 
     @Override
     public double getPrecioVenta() {
-        return 0;
+        return getPrecio(); // devuelve el precio base
+    }
+
+    @Override
+    public String toString() {
+        return "IPhone{" +
+                "color='" + modelo + '\'' +
+                ", modelo='" + color + '\'' +
+                '}';
     }
 }

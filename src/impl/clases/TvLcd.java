@@ -6,19 +6,20 @@ public class TvLcd extends Electronico {
 
     private int pulgada;
 
-    public TvLcd(String fabricante, int pulgada) {
-        super(fabricante);
+    public TvLcd(int Precio, String fabricante, int pulgada) {
+        super(Precio, fabricante);
         this.pulgada = pulgada;
     }
 
     @Override
-    public int getPrecio() {
-        return 0;
+    public double getPrecioVenta() {
+        return getPrecio();
     }
 
     @Override
-    public double getPrecioVenta() {
-        return 0;
+    public String toString() {
+        return "TvLcd{" +
+                "pulgadas=" + pulgada +
+                '}';
     }
-
 }
