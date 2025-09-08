@@ -11,7 +11,6 @@ public class ProyectoCatalogo {
 
     public static void main(String[] args) {
 
-        // Usar arreglo del mismo tipo de la interfaz para evitar ArrayStoreException
         IProducto[] producto = new IProducto[10];
 
         producto[0] = new IPhone(699, "Apple", "iPhone 15 Pro", "Negro");
